@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #7bdaf3;
+  display: flex;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.add {
+  background-color: #9ec862;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.note {
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  background-color: #fff;
+  height: 400px;
+  width: 400px;
+}
+
+.note .tools {
+  background-color: #9ec852;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note .main {
+  background-color: #eee;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  color: red;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  border: none;
+  width: 100%;
+  height: 400px;
+  font-size: 1.2rem;
+}
+
+.note .hidden {
+  display: none;
+}

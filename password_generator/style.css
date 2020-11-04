@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.pw-container {
+  min-width: 400px;
+  background-color: rgb(77, 19, 136);
+  transition: all 0.5s;
+}
+
+.pw-container:hover {
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pw-header {
+  padding: 1rem;
+}
+
+.pw-body {
+  padding: 0 1rem 1rem;
+}
+
+.pw {
+  background-color: rebeccapurple;
+  font-size: 1.6rem;
+  padding: 1rem;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.pw button {
+  background-color: rgb(114, 53, 176);
+  border: none;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  transition: all 0.4s ease;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  cursor: pointer;
+}
+
+.pw:hover button {
+  transform: translate(-50%, 0%);
+  opacity: 1;
+}
+
+.form-control {
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.5rem 0;
+}
+
+.generate {
+  display: block;
+  color: rebeccapurple;
+  background-color: #ecb602;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.generate:focus {
+  outline: none;
+}

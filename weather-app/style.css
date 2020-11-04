@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(300deg, #ced1d6, #bfc0c0);
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+  padding: 1rem;
+  width: 10rem;
+  transition: all 0.4s ease-in-out;
+  animation: big 2s ease-in-out infinite;
+}
+
+input:focus {
+  outline: none;
+  width: 15rem;
+}
+
+.weather {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.weather h3 {
+  padding: 0;
+  margin-bottom: 0px;
+  /* margin: 0; */
+}
+
+.weather small {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes big {
+  0% {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  }
+}

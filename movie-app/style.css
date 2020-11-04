@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #22275c;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-color: #373b69;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  font-family: inherit;
+  justify-content: flex-end;
+}
+
+.search {
+  padding: 0.7rem 1rem;
+  background-color: transparent;
+  border-radius: 50px;
+  color: white;
+  border: 2px solid #22275c;
+  font-size: 1rem;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  background-color: #22254b;
+  outline: none;
+}
+
+main {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: #373b69;
+  position: relative;
+  width: 270px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+.movie img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  color: #eee;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem 1rem;
+  font-family: inherit;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-info span {
+  background-color: #22254b;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: green;
+}
+.movie-info span.orange {
+  color: rgb(238, 158, 10);
+}
+.movie-info span.red {
+  color: rgb(228, 3, 3);
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overview {
+  background-color: white;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
+
+.overview::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overview::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.overview::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.movie:hover .backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overview h3 {
+  margin-top: 0;
+}

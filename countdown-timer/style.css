@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./lights.jpg");
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(249, 249, 249);
+  align-items: center;
+  background-size: cover;
+  font-family: "Courier New", Courier, monospace;
+  background-position: center center;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+
+.countdown-el {
+  text-align: center;
+}
+
+.countdown-el span {
+  font-size: 1.5rem;
+}
